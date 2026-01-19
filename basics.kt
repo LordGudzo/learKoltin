@@ -4,7 +4,8 @@ const val MAX_USERS = 100  //const
 
 fun main() {
 	variable()
-    arithmetic(5,2)    
+    arithmetic(5,2)
+	comparisonAndLogical(1, 0, "Hi")
 }
 
 fun variable(){ 
@@ -29,4 +30,30 @@ fun arithmetic(a: Int, b: Int) {
     """.trimIndent())                 // .trimIndent() cleans spaces in the String
 }
 
-
+fun comparisonAndLogical(a: Int, b: Int, s: String): Int {
+    val comparisonCheck1 = (a == b)
+    println(comparisonCheck1)
+    
+    val comparisonCheck2 = (a != b)
+    println(comparisonCheck2)
+    
+    val comparisonCheck3 = (a < s.length)
+    println(comparisonCheck3)
+    
+    val logicalCheck1 = true && false                  // return first false or true
+    println("logicalCheck1 " + logicalCheck1)
+    
+    val logicalCheck2 = true || false                  // return first true or false
+    println("logicalCheck2 " + logicalCheck2)
+    
+    
+    val checkIf = if(a > b) a else b
+    println(checkIf)
+    
+    if(a > b) {
+        return a
+    } else {
+        return b
+    }
+    
+}
