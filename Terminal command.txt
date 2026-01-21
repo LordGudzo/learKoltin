@@ -1,0 +1,7 @@
+1. pwd  - where I
+2. cd ..  up
+3. git clone https://...   clone project
+4. git add . git commit -m "text"  ...add commit
+5. git push    push to cloud
+6. git status
+7. ls what near I
