@@ -1,6 +1,7 @@
 import kotlin.math.pow
 const val MAX_USERS = 100  //const
 
+Test2
 
 fun main() {
 	variable()
